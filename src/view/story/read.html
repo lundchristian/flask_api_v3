@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<a href="{{ url_for('story.create') }}" class="button">create new story</a>
+{% for story in stories %}
+<div class="container">
+    <div class="card">
+        <div>_| {{ story.title }} |_</div>
+        <div>{{ story.description }}</div>
+        <div>by: {{ story.author }} [{{ story.created.strftime('%Y-%m-%d') }}]</div>
+        <a href="{{ url_for('story.update', id=story['id']) }}" class="button">edit</a>
+        <a href="{{ url_for('chapter.read', story_id=story['id']) }}" class="button">read</a>
+    </div>
+</div>
+{% endfor %}
+
+{% endblock %}

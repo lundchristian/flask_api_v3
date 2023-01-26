@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@200&family=Major+Mono+Display&display=swap');
+
+body { width: 80%; margin: auto; display: flex; flex-direction: column; font-family: monospace, Courier; }
+header { font-size: 24px; padding: 20px; }
+footer { font-size: 14px; padding: 20px; align-self: flex-end; }
+
+.container { display: flex; flex-direction: column; gap: 10px; margin-top: 20px; border: 1px #000000 solid }
+.card { display: flex; flex-direction: column; align-content: center; padding: 10px; gap: 10px; border: 1px #000000 solid; }
+.head { flex-grow: 1; }
+.body { flex-grow: 1; }
+.foot { flex-grow: 1; }
+.button { background-color: #FFFFFF; border: 1px #000000 solid; color: #000000; padding: 10px; text-align: center; text-decoration: none; }
+.button:hover { background-color: #000000; color: #FFFFFF; cursor: pointer; }
+.button:focus { outline: 3px #FFC0CB solid; border: none; }
+
+form { display: flex; flex-direction: column; gap: 10px; margin-top: 10px; border: 1px #000000 dashed }
+input[type=text] { padding: 10px; margin: 5px; background-color: #FFFFFF; border: 1px #000000 solid; color: #000000; text-align: center; text-decoration: none; }
+input[type=text]:hover { background-color: #000000; color: #FFFFFF; }
+input[type=text]:focus { background-color: #000000; color: #FFFFFF; outline: 3px #FFC0CB solid; border: none; }
+
+textarea { resize: vertical; padding: 10px; margin: 5px; background-color: #FFFFFF; border: 1px #000000 solid; color: #000000; text-align: left; }
+textarea:hover { background-color: #000000; color: #FFFFFF; }
+textarea:focus { background-color: #000000; color: #FFFFFF; outline: 3px #FFC0CB solid; border: none; }
+
+input[type=submit] { padding: 10px; margin: 5px; background-color: #FFFFFF; border: 1px #000000 solid; color: #000000; text-align: center; text-decoration: none; }
+input[type=submit]:hover { background-color: #000000; color: #FFFFFF; cursor: pointer; }
+input[type=submit]:focus { outline: 3px #FFC0CB solid; border: none; }

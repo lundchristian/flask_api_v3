@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="form-container">
+    <form method="post">
+        <input type="text" name="title" value="{{ request.form['title'] or story['title'] }}" required>
+        <textarea name="description" >{{ request.form['description'] or story['description'] }}</textarea>
+        <input type="submit" value="update">
+    </form>
+    <form action="{{ url_for('story.delete', id=story['id']) }}" method="post">
+        <input type="submit" value="delete" onclick="return confirm('Are you sure?');">
+    </form>
+</div>
+{% endblock %}

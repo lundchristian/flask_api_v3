@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<a href="{{ url_for('chapter.create', story_id=story_id) }}" class="button" style="margin-top: 10px;">create new chapter</a>
+<a href="{{ url_for('chapter.generate', story_id=story_id) }}" class="button" style="margin-top: 10px;">generate new chapter</a>
+<a href="{{ url_for('chapter.download', story_id=story_id) }}" class="button" style="margin-top: 10px;">download</a>
+{% for chapter in chapters %}
+<div class="container">
+    <div class="card">
+        <div>_| {{ chapter.title }} |_</div>
+        <div>{{ chapter.body }}</div>
+        <div>[{{ chapter.created.strftime('%Y-%m-%d') }}]</div>
+        <a href="{{ url_for('chapter.update', id=chapter['id'], story_id=story_id) }}" class="button">edit</a>
+    </div>
+</div>
+{% endfor %}
+
+{% endblock %}

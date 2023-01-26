@@ -1,5 +1,8 @@
 ## Generate stories with artificial intelligence :space_invader:
-Simple flask application
+
+Simple flask application where you can create a story and add chapters. You can either add your own chapter, or let the AI create one that is based on the story so far! You can edit the chapters as you like or leave the be, have fun!
+
+![](https://github.com/lundchristian/flask_api_v3/blob/master/GIF.gif)
 
 #### Create a directory path that you're comfortable with, then install a virtual environment and activate it!
     CMD :\comyf_path> py -m venv .venv

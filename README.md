@@ -9,7 +9,7 @@ Simple flask application where you can create a story and add chapters. You can 
     CMD :\comyf_path> .\.venv\scripts\activate
 
 #### Clone this repo into a new folder named src:
-    CMD :\comyf_path\src> git clone https://github.com/lundchristian/flask_api_v3
+    CMD :\comyf_path\src> git clone repo https://github.com/lundchristian/flask_api_v3
 
 #### Install Flask and dotenv, like so:
     CMD :\comyf_path> pip install Flask
